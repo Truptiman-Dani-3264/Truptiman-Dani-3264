@@ -191,35 +191,38 @@ Planning to open-source scaled-down versions of my work — a mini RAG document 
 
 ---
 
-### 📊 GitHub Stats
+### 🦑 Full Metrics Dashboard
+
+<!--
+  Powered by lowlighter/metrics — a GitHub Action that renders a rich SVG
+  dashboard (isometric calendar, languages, stars, achievements, and more)
+  and commits it to this repo on a schedule.
+  Setup: add metrics.yml (provided) to .github/workflows/ in this repo,
+  plus a METRICS_TOKEN secret. It'll appear here after the first run.
+-->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Truptiman-Dani-3264/Truptiman-Dani-3264/main/metrics.svg" alt="Metrics" width="100%" />
+</p>
+
+---
+
+### 📊 GitHub Stats & Activity
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Truptiman-Dani-3264&show_icons=true&theme=radical&count_private=true&hide_border=true" alt="GitHub Stats" height="165"/>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Truptiman-Dani-3264&theme=radical&hide_border=true" alt="GitHub Streak" height="165"/>
 </p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Truptiman-Dani-3264&layout=compact&theme=radical&hide_border=true" alt="Top Languages" />
-</p>
-
-### 🏆 Trophies
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Truptiman-Dani-3264&theme=radical&no-frame=true&row=1&column=6" alt="GitHub Trophies" />
-</p>
-
-### 📈 Contribution Activity
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Truptiman-Dani-3264&theme=redical&hide_border=true" alt="Contribution Graph" />
 </p>
 
+
+
 <!--
-  🐍 Contribution Snake — this needs a one-time GitHub Actions setup.
-  1. Create .github/workflows/snake.yml in your profile repo with the
-     Platane/snk action (search "github contribution snake action").
-  2. It will generate assets that render below automatically.
-  Leave this section in — it'll come alive once the workflow runs once.
+  🐍 Contribution Snake — one-time setup required. Add the snake.yml
+  workflow (provided) to .github/workflows/. Like metrics.svg, this
+  generates and commits its own asset, so once set up it's reliable —
+  no dependency on an external server.
 -->
 <p align="center">
   <img src="https://raw.githubusercontent.com/Truptiman-Dani-3264/Truptiman-Dani-3264/output/github-contribution-grid-snake.svg" alt="Contribution Snake" />
