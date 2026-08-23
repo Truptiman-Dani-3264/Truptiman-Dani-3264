@@ -1,0 +1,41 @@
+name: Metrics
+on:
+  # Runs once a day
+  schedule:
+    - cron: "0 0 * * *"
+  # Lets you trigger it manually from the Actions tab
+  workflow_dispatch:
+  # Runs whenever you push to main
+  push:
+    branches: ["main"]
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: metrics.svg
+
+          # --- Layout ---
+          template: classic
+          base: header, activity, community, repositories, metadata
+
+          # --- Plugins (toggle on/off as you like) ---
+          plugin_calendar: yes
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+          plugin_languages: yes
+          plugin_languages_analysis_type: repositories
+          plugin_languages_sections: most-used
+
+          plugin_stars: yes
+          plugin_stars_limit: 4
+
+          plugin_lines: yes
+
+          plugin_achievements: yes
